@@ -129,9 +129,11 @@ const GameBoard = () => {
                   const fieldWinner = winnerPlayer.matrixWinner[columnIndex] && winnerPlayer.winnerSymbol === column;
 
                   return (
-                    <div key={columnIndex} className={`
-                  w-40
-                  h-40
+                  <div key={columnIndex} className={`
+                  w-[5rem]
+                  h-[5rem]
+                  md:w-[10rem]
+                  md:h-[10rem]
                   aspect-square
                   cursor-pointer
                   flex

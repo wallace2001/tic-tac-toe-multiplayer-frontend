@@ -19,5 +19,5 @@ Motivo do projeto foi pra conhecimentos para aplicar em um projeto maior que ain
 Por enquanto tem só as funcionalidades necessárias
 Algumas fotos do projeto:
 
-<img width="600" alt="Captura de Tela 2022-04-05 às 22 12 05" src="https://github.com/wallace2001/tic-tac-toe-multiplayer-frontend/blob/develop/images/Login.png?raw=true">
-<img width="600" alt="Captura de Tela 2022-04-05 às 22 12 05" src="https://github.com/wallace2001/tic-tac-toe-multiplayer-frontend/blob/develop/images/Move.png?raw=true">
+<img width="900" alt="Captura de Tela 2022-04-05 às 22 12 05" src="https://github.com/wallace2001/tic-tac-toe-multiplayer-frontend/blob/develop/images/Login.png?raw=true">
+<img width="900" alt="Captura de Tela 2022-04-05 às 22 12 05" src="https://github.com/wallace2001/tic-tac-toe-multiplayer-frontend/blob/develop/images/Move.png?raw=true">

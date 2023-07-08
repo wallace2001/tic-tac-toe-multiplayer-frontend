@@ -1,6 +1,10 @@
+import GameBoard from "./components/client";
+import ClientOnly from "@/components/ClientOnly";
 
 export default function Home() {
   return (
-    <div>Tik Tak Toe Mulitplayer</div>
+    <ClientOnly>
+      <GameBoard />
+    </ClientOnly>
   )
 }

@@ -5,13 +5,14 @@ import { UseFormRegister, FieldErrors } from "react-hook-form";
 import { SchemaForm } from "@/app/(auth)/sign-up/components/sign-up-form";
 import _ from "lodash";
 
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+interface InputProps {
     id: string;
     label: string;
     type?: string;
     disabled?: boolean;
     formatPrice?: boolean;
     required?: boolean;
+    register: UseFormRegister<SchemaForm>;
     errors: FieldErrors;
 }
 
@@ -22,8 +23,8 @@ const Input: React.FC<InputProps> = ({
     disabled,
     formatPrice,
     required,
-    errors,
-    ...rest
+    register,
+    errors
 }) => {
     return ( 
         <div className="w-full relative">
@@ -33,6 +34,7 @@ const Input: React.FC<InputProps> = ({
             <input 
                 id={id}
                 disabled={disabled}
+                {...register}
                 placeholder=" "
                 type={type}
                 className={`
@@ -52,7 +54,6 @@ const Input: React.FC<InputProps> = ({
                     ${errors[id] ? 'border-red-500' : 'border-neutral-300'}
                     ${errors[id] ? 'focus:border-red-500' : 'focus:border-white'}
                 `}
-                {...rest}
             />
             <label
                 className={`
